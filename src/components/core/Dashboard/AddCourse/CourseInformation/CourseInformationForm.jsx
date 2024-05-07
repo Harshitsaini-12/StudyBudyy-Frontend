@@ -32,8 +32,6 @@ export default function CourseInformationForm() {
   const [loading, setLoading] = useState(false)
   const [courseCategories, setCourseCategories] = useState([])
 
-  console.log(courseCategories,"{{{{{{{{{{{{{{{[")
-
   useEffect(() => {
     const getCategories = async () => {
       setLoading(true)
