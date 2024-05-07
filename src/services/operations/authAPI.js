@@ -19,7 +19,6 @@ export function sendOtp(email, navigate) {
     const toastId = toast.loading("Loading...")
     dispatch(setLoading(true))
     try {
-      console.log("inside tryu")
       const response = await apiConnector("POST", SENDOTP_API, {
         email,
         checkUserPresent: true,
